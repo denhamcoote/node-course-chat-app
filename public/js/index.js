@@ -3,10 +3,6 @@ var socket = io();
 socket.on('connect', function () {
   console.log('Connected to server');
 
-  socket.emit('createMessage', {
-    to: 'All',
-    text: 'Hello from socket.io client'
-  });
 });
 
 socket.on('disconnect', function () {
